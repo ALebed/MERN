@@ -18,6 +18,12 @@ app.get('/', (req, res) => {
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Define routes
+app.use('/api/users', require('./src/routes/api/users'));
+app.use('/api/auth', require('./src/routes/api/auth'));
+app.use('/api/profile', require('./src/routes/api/profiles'));
+app.use('/api/posts', require('./src/routes/api/posts'));
+
 app.listen(PORT, () => {
     console.log(`Server running on a port ${PORT}`);
 });
