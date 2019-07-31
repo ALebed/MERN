@@ -1,2 +1,2 @@
-# bookmal
-Mentoring EPAM Lab project
+# MERN Stack
+MERN learning project
